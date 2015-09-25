@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Sandbox", "The Sandbox\The Sandbox.csproj", "{BE702649-95DD-4158-9AA5-90AF52510786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Sandbox.Tests", "The Sandbox.Tests\The Sandbox.Tests.csproj", "{29775C98-9269-46B9-A308-4DDDBF48D152}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{988F4ECD-C363-4A48-AD7C-89AD6C771F1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{F4F56066-896A-4040-A765-AA19261A166C}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{C9CEB6FE-33E8-4078-8CBE-119FFDEE5E4F}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\TheSandbox.json = PublishScripts\Templates\TheSandbox.json
+		PublishScripts\Templates\TheSandbox.param.dev.json = PublishScripts\Templates\TheSandbox.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE702649-95DD-4158-9AA5-90AF52510786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE702649-95DD-4158-9AA5-90AF52510786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE702649-95DD-4158-9AA5-90AF52510786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE702649-95DD-4158-9AA5-90AF52510786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29775C98-9269-46B9-A308-4DDDBF48D152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29775C98-9269-46B9-A308-4DDDBF48D152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29775C98-9269-46B9-A308-4DDDBF48D152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29775C98-9269-46B9-A308-4DDDBF48D152}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4F56066-896A-4040-A765-AA19261A166C} = {988F4ECD-C363-4A48-AD7C-89AD6C771F1D}
+		{C9CEB6FE-33E8-4078-8CBE-119FFDEE5E4F} = {988F4ECD-C363-4A48-AD7C-89AD6C771F1D}
+	EndGlobalSection
+EndGlobal
